@@ -166,7 +166,7 @@
       "manager": "jasonh",
       "ms.devlang": "powershell",
       "ms.service": "partner-dashboard",
-      "ms.subservice": "partner-center-sdk",
+      "ms.subservice": "partnercenter-sdk",
       "showPowerShellPicker": "true",
       "uhfHeaderId": "MSDocsHeader-Partner-Center",
       "searchScope": ["Partner Center", "Partner Center developer resources","Partner Center PowerShell"] 
