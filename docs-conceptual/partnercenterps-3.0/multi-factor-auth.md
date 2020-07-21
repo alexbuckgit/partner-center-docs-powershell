@@ -1,6 +1,7 @@
 ---
 title: Automating tasks with PowerShell
 description: How to automate tasks in PowerShell when Multi-Factor Authentication is enforced.
+ms.date: 06/25/2020
 ---
 
 # Multi-Factor Authentication
@@ -59,7 +60,7 @@ $credential = Get-Credential
 $refreshToken = '<RefreshToken>'
 
 $azureToken = New-PartnerAccessToken -ApplicationId 'xxxx-xxxx-xxxx-xxxx' -Credential $credential -RefreshToken $refreshToken -Scopes 'https://management.azure.com//user_impersonation' -ServicePrincipal -Tenant 'yyyy-yyyy-yyyy-yyyy'
-$graphToken = New-PartnerAccessToken -ApplicationId 'xxxx-xxxx-xxxx-xxxx' -Credential $credential -RefreshToken $refreshToken -Scopes 'https://graph.microsoft.com/.default' -ServicePrincipal -Tenant 'yyyy-yyyy-yyyy-yyyy'
+$graphToken = New-PartnerAccessToken -ApplicationId 'xxxx-xxxx-xxxx-xxxx' -Credential $credential -RefreshToken $refreshToken -Scopes 'https://graph.windows.net/.default' -ServicePrincipal -Tenant 'yyyy-yyyy-yyyy-yyyy'
 
 # Az Module
 Connect-AzAccount -AccessToken $token.AccessToken -AccountId 'azureuser@contoso.com' -GraphAccessToken $graphToken.AccessToken -TenantId 'xxxx-xxxx-xxxx-xxxx'
@@ -91,10 +92,7 @@ When generating the initial refresh token, you will need to use following
 
 ```powershell
 $token = New-PartnerAccessToken -Module ExchangeOnline
-```
-
-> [!NOTE]
-> The refresh token to be used to generate an Exchange Online access token **must** be obtained via the above PowerShell command. Unlike a refresh token for obtaining access tokens to connect to Partner Center API, Graph API, etc. this token **cannot** be obtained via a call to `https://login.microsoftonline.com/sandboxendurancecsp.onmicrosoft.com/oauth2/token`. 
+``` 
 
 > [!IMPORTANT]
 > After invoking the commands above, you will find the refresh token value is available through `$token.RefreshToken`. This value should be stored in a secure repository such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to ensure that is appropriately secure because it will be used instead of credentials.
@@ -103,6 +101,7 @@ Use the following to generate a new access token using the refresh, and then cre
 
 ```powershell
 $customerId = '<CustomerId>'
+$customerDomainName = '<CustomerDomainName>'
 $refreshToken = '<RefreshTokenValue>'
 $upn = '<UPN-used-to-generate-the-refresh-token>'
 
@@ -111,13 +110,13 @@ $token = New-PartnerAccessToken -RefreshToken $token.RefreshToken -Scopes 'https
 $tokenValue = ConvertTo-SecureString "Bearer $($token.AccessToken)" -AsPlainText -Force
 $credential = New-Object System.Management.Automation.PSCredential($upn, $tokenValue)
 
-$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?DelegatedOrg=$($customerId)&BasicAuthToOAuthConversion=true" -Credential $credential -Authentication Basic -AllowRedirection
+$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?DelegatedOrg=$($customerDomainName)&BasicAuthToOAuthConversion=true" -Credential $credential -Authentication Basic -AllowRedirection
 
 Import-PSSession $session
 ```
 
-> [!NOTE]
-> The value of the `application_id` parameter in this call must be exactly as shown (`'a0c73c16-a7e3-4564-9a95-2bdf47383716'`); it is the ID for the Exchange Online app (not your custom app, if one exists).
+> [!IMPORTANT]
+> The application identifier *a0c73c16-a7e3-4564-9a95-2bdf47383716* is for the Exchange Online PowerShell Azure Active Direcotry application. When requesting an access, or refresh, token for use with Exchange Online PowerShell you will need to use this value. 
 
 #### MS Online
 
