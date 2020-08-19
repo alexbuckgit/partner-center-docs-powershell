@@ -12,7 +12,7 @@ The Partner Center PowerShell module contains a set of PowerShell commands for a
 
 If you're unfamiliar with PowerShell, an introduction to PowerShell may be helpful.
 
-* [Installing PowerShell](/powershell/scripting/setup/installing-windows-powershell)
+* [Install PowerShell](/powershell/scripting/install/installing-powershell)
 * [Scripting with PowerShell](/powershell/scripting/powershell-scripting)
 
 You can also watch this video:

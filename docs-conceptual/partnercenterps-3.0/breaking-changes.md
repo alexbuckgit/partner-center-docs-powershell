@@ -30,7 +30,7 @@ ms.date: 12/05/2019
     Microsoft Azure 9681cddd-4b96-4d67-96e5-399a827d5375 active 0d066578-66b7-40f6-afad-6e179df3ad80
     ```
 
-  * [New-PartnerAzureSubscription](https://docs.microsoft.com/powershell/module/partnercenter/Neew-PartnerAzureSubscription) the `CustomerName` parameter will be replaced by the `CustomerId` parameter starting wth version 3.0.1
+  * [New-PartnerAzureSubscription](https://docs.microsoft.com/powershell/module/partnercenter/New-PartnerAzureSubscription) the `CustomerName` parameter will be replaced by the `CustomerId` parameter starting wth version 3.0.1
 
     ```powershell
     # Old
