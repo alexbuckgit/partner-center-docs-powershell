@@ -7,7 +7,10 @@ ms.date: 09/12/2019
 
 # Overview of Partner Center PowerShell
 
-Partner Center PowerShell is commonly used by partners to manage their Partner Center resources. It is an open source project maintained by the partner community. Since this module is maintained by the partner community, it is not officially supported by Microsoft. You can [get help from the community](https://stackoverflow.com/questions/tagged/partner+center) or open an [issue](https://github.com/microsoft/partner-center-powershell/issues) on GitHub.
+Partner Center PowerShell is used by partners to manage their Partner Center resources. It's an open source project maintained by the partner community. Since this module is maintained by the partner community, it's not officially supported by Microsoft. You can [get help from the community](https://stackoverflow.com/questions/tagged/partner+center).
+
+> [!IMPORTANT]
+> This content is no longer being updated. 
 
 ## Install
 
