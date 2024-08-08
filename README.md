@@ -1,4 +1,8 @@
-# Partner Center PowerShell
+# Partner Center PowerShell (Archive)
+
+Reference material is organized into release versions. **This content is no longer being maintained, and no updates will be made.**
+
+When active, this was an open source project maintained by the partner community. Since this module was maintained by the partner community, it wasn't officially supported by Microsoft. You can still [get help from the community](https://stackoverflow.com/questions/tagged/partner+center).
 
 ## Contributing
 
@@ -10,8 +14,10 @@ When you submit a pull request, a CLA-bot will automatically determine whether y
 a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
 provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+## Microsoft Open Source Code of Conduct
+
+When active, this project adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Legal Notices
