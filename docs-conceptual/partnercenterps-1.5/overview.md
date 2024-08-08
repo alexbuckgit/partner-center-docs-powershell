@@ -8,6 +8,11 @@ ms.date: 05/17/2019
 
 The Partner Center PowerShell module contains a set of PowerShell commands for administrators and developers to manage Cloud Solution Provider program resources. Using this module you can perform tasks such as customer and subscription life cycle management, confirm customer acceptance of the Microsoft Cloud Agreement, and purchase reserved instances.
 
+This is an open source project maintained by the partner community. Since this module is maintained by the partner community, it's not officially supported by Microsoft. You can [get help from the community](https://stackoverflow.com/questions/tagged/partner+center).
+
+> [!IMPORTANT]
+> This content is no longer being updated. 
+
 ## Learn PowerShell basics
 
 If you're unfamiliar with PowerShell, an introduction to PowerShell may be helpful.
