@@ -1,31 +1,32 @@
-- name: Partner Center PowerShell
-  href: overview.md
-- name: Install
-  href: install.md
-- name: Get started
-  href: get-started.md
-  displayName: sign in, signin, log in, login, find, feedback, intro, introduction
-- name: Sign in
-  items: 
-  - name: Authentication
-    href: authenticate.md
-    displayName: >-
-      sign in, signin, log in, login, credentials, msi, managed identity,
-      tenant, subscription, region, certificate, service principal,
-      authenticate
-  - name: Multifactor authentication
-    href: multi-factor-auth.md
-    displayName: mfa, secure application model, multi-factor auth, multi-factor authentication
-  - name: Exchange Online with GDAP and App
-    href: exchange-online-gdap-app.md
-- name: Releases
-  items:
-  - name: Release notes
-    href: release-notes.md
-  - name: Breaking changes
-    href: breaking-changes.md 
-- name: Security
-  items:
-  - name: Testing Partner Security Requirements
-    href: test-partner-security-requirements.md
-    displayName: partner security requirements, multi-factor authentication 
+items:
+  - name: Partner Center PowerShell
+    href: overview.md
+  - name: Install
+    href: install.md
+  - name: Get started
+    href: get-started.md
+    displayName: sign in, signin, log in, login, find, feedback, intro, introduction
+  - name: Sign in
+    items: 
+    - name: Authentication
+      href: authenticate.md
+      displayName: >-
+        sign in, signin, log in, login, credentials, msi, managed identity,
+        tenant, subscription, region, certificate, service principal,
+        authenticate
+    - name: Multifactor authentication
+      href: multi-factor-auth.md
+      displayName: mfa, secure application model, multi-factor auth, multi-factor authentication
+    - name: Exchange Online with GDAP and App
+      href: exchange-online-gdap-app.md
+  - name: Releases
+    items:
+    - name: Release notes
+      href: release-notes.md
+    - name: Breaking changes
+      href: breaking-changes.md 
+  - name: Security
+    items:
+    - name: Testing Partner Security Requirements
+      href: test-partner-security-requirements.md
+      displayName: partner security requirements, multi-factor authentication 
