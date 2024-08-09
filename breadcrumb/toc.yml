@@ -1,15 +1,15 @@
  items:
-  - name: Previous Versions
-    tocHref: /previous-versions/
-    topicHref: /previous-versions/
-    items:
-      - name: Partner Center PowerShell (Archive)
-        tocHref: /previous-versions/partner-center-powershell
-        topicHref: /previous-versions/partner-center-powershell
-        items:
-        - name: Partner Center PowerShell
-          tocHref: /previous-versions/powershell/partnercenter/
-          topicHref: /previous-versions/powershell/partnercenter/overview
-        - name: Reference
-          tocHref: /previous-versions/powershell/module/partnercenter/
-          topicHref: /previous-versions/powershell/module/partnercenter
+ - name: Previous Versions
+   tocHref: /previous-versions/
+   topicHref: /previous-versions/
+   items:
+     - name: Partner Center PowerShell (Archive)
+       tocHref: /previous-versions/partner-center-powershell
+       topicHref: /previous-versions/partner-center-powershell
+       items:
+       - name: Partner Center PowerShell
+         tocHref: /previous-versions/powershell/partnercenter/
+         topicHref: /previous-versions/powershell/partnercenter/overview
+       - name: Reference
+         tocHref: /previous-versions/powershell/module/partnercenter/
+         topicHref: /previous-versions/powershell/module/partnercenter
