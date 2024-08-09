@@ -162,7 +162,7 @@
       "is_archived": true,
       "is_retired": true, 
       "feedback_system": "None",
-      "learn_archive": "manual"
+      "learn_archive": "manual",
       "author": "isaiahwilliams",
       "apiPlatform": "powershell",
       "breadcrumb_path": "/previous-versions/powershell/partnercenter/breadcrumb/toc.json",
