@@ -158,11 +158,15 @@
       }
     },
     "globalMetadata": {
+      "ROBOTS": "NOINDEX,NOFOLLOW",
+      "is_archived": true,
+      "is_retired": true, 
+      "feedback_system": "None",
+      "learn_archive": "manual",
       "author": "isaiahwilliams",
       "apiPlatform": "powershell",
-      "breadcrumb_path": "/powershell/partnercenter/breadcrumb/toc.json",
+      "breadcrumb_path": "/previous-versions/powershell/partnercenter/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "Standard",
       "feedback_product_url": "https://stackoverflow.com/questions/tagged/partner+center",
       "ms.author": "iswillia",
       "manager": "jasonh",
